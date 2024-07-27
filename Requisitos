@@ -1,0 +1,52 @@
+## Requisitos do Sistema de Perguntas e Respostas sobre COSMOS
+
+### 4.1 Input
+
+- **Formato:** Texto livre em linguagem natural.
+- **Conteúdo:** Uma pergunta sobre qualquer tema abordado no livro "Cosmos" de Carl Sagan.
+- **Exemplos:**
+    - "Qual a importância da exploração espacial segundo Carl Sagan?"
+    - "O que são os buracos negros?"
+    - "Como a ciência influencia nossa visão do mundo?"
+
+### 4.2 Output
+
+- **Formato:** Texto em linguagem natural.
+- **Conteúdo:** Uma resposta completa, precisa e relevante à pergunta, baseada no conteúdo do livro "Cosmos".
+- **Características:**
+    - Coerente e bem estruturada.
+    - Citações ou referências ao livro quando apropriado.
+    - Linguagem clara e acessível.
+
+### 4.3 Componentes
+
+O sistema deve incluir os seguintes componentes:
+
+- **Chat Input:** Campo de texto para o usuário digitar sua pergunta.
+- **Chat Output:** Área para exibir a resposta gerada pelo sistema.
+- **Langwatch Evaluator:** Componente obrigatório para avaliação do sistema, integrado ao fluxo de submissão.
+
+**Tecnologias:**
+
+A escolha das tecnologias para implementar os componentes é livre, desde que atendam aos requisitos e permitam a integração com o Langwatch Evaluator. Algumas sugestões:
+
+- **Frontend:** HTML, CSS, JavaScript (com bibliotecas como React, Vue.js ou Angular).
+- **Backend:** Python (com frameworks como Flask ou Django), Node.js, etc.
+- **Modelo de Linguagem:** GPT-3.5, GPT-4 ou outros modelos adequados para tarefas de perguntas e respostas.
+- **Bibliotecas NLP:** spaCy, Hugging Face Transformers, etc.
+
+**Interface do Usuário:**
+
+A interface deve ser intuitiva e fácil de usar, permitindo que o usuário insira sua pergunta e visualize a resposta de forma clara. É recomendado incluir recursos como:
+
+- Histórico de perguntas e respostas.
+- Feedback do usuário sobre a qualidade das respostas.
+- Opção de compartilhar perguntas e respostas.
+
+**Considerações Adicionais:**
+
+- O sistema deve ser capaz de lidar com perguntas ambíguas ou mal formuladas, solicitando esclarecimentos ao usuário quando necessário.
+- A resposta deve ser gerada em tempo hábil, proporcionando uma experiência de usuário fluida.
+- É importante garantir a segurança e privacidade dos dados do usuário.
+
+Com estes requisitos em mente, os participantes podem desenvolver sistemas de perguntas e respostas inovadores e eficazes, utilizando a metodologia RAG para explorar o vasto conhecimento contido no livro "Cosmos".
