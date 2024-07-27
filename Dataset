@@ -1,0 +1,38 @@
+## Sistema de Perguntas e Respostas sobre o Livro COSMOS (RAG)
+
+### 📂 Dataset
+
+Este diretório contém os arquivos necessários para o desenvolvimento do sistema de perguntas e respostas sobre o livro "COSMOS" utilizando a metodologia RAG:
+
+1. **cosmos_text.txt:**
+   - Contém o texto completo do livro "COSMOS" em formato de texto.
+   - Será utilizado para indexação e vetorização do conhecimento.
+
+2. **index.json (Opcional):**
+   - Armazena o índice invertido do texto, mapeando palavras e frases para suas posições no texto original.
+   - Pode ser gerado durante a etapa de indexação para acelerar a busca por similaridade.
+
+3. **vectors.npy (Opcional):**
+   - Contém os vetores numéricos (embeddings) de cada parte do texto indexado.
+   - Pode ser gerado durante a etapa de vetorização para representar o significado semântico do texto.
+
+### Próximos Passos
+
+1. **Indexação:**
+   - Processar o arquivo `cosmos_text.txt` para criar um índice invertido (opcional).
+   - Armazenar o índice em `index.json` (opcional).
+
+2. **Vetorização:**
+   - Converter cada parte do texto indexado em vetores numéricos.
+   - Armazenar os vetores em `vectors.npy` (opcional).
+
+3. **Implementação do Sistema:**
+   - Utilizar os arquivos `cosmos_text.txt`, `index.json` e `vectors.npy` para implementar as etapas de recuperação e geração aumentada.
+   - Criar a interface do usuário (opcional).
+
+### Observações
+
+- Os arquivos `index.json` e `vectors.npy` são opcionais, mas podem melhorar significativamente o desempenho do sistema, especialmente para grandes volumes de texto.
+- A escolha das ferramentas e tecnologias para indexação, vetorização e implementação do sistema dependerá dos seus requisitos e preferências.
+
+Com este dataset e os próximos passos, você estará pronto para construir um sistema de perguntas e respostas poderoso e informativo sobre o livro "COSMOS".
