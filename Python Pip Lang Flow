@@ -1,0 +1,42 @@
+## Instalando o LangFlow com Python e pip
+
+**Pré-requisitos:**
+
+- Python 3.8 ou superior instalado em seu sistema.
+- pip (gerenciador de pacotes do Python) instalado.
+
+**Passos:**
+
+1. **Abra o terminal ou prompt de comando.**
+2. **Execute o seguinte comando:**
+
+```bash
+python -m pip install langflow
+```
+
+Este comando fará o seguinte:
+
+- **Baixará:** O pip irá baixar o pacote LangFlow e suas dependências do PyPI (Python Package Index).
+- **Instalará:** Em seguida, o pip instalará o LangFlow em seu ambiente Python.
+
+**Verificando a instalação:**
+
+Após a instalação, você pode verificar se o LangFlow foi instalado corretamente executando o seguinte comando:
+
+```bash
+langflow --version
+```
+
+Se a instalação foi bem-sucedida, você verá a versão do LangFlow instalada.
+
+**Próximos passos:**
+
+Agora que você instalou o LangFlow, você pode começar a criar seus próprios fluxos de trabalho para construir aplicações de IA. Consulte a documentação oficial do LangFlow para obter mais informações e tutoriais:
+
+- **Documentação:** [https://langflow.org/](https://langflow.org/)
+
+**Observações:**
+
+- Se você encontrar algum erro durante a instalação, certifique-se de que você tem uma versão compatível do Python e do pip.
+- Se você estiver usando um ambiente virtual Python, ative-o antes de instalar o LangFlow.
+- Para obter mais opções de instalação e configuração, consulte a documentação do LangFlow.
