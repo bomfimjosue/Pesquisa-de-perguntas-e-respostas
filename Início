@@ -1,0 +1,48 @@
+## Sistema de Perguntas e Respostas sobre o Livro COSMOS (RAG)
+
+Este projeto visa criar um sistema de perguntas e respostas que utiliza a metodologia RAG (Retrieval-Augmented Generation) para fornecer respostas precisas e relevantes sobre o conteúdo do livro "COSMOS" de Carl Sagan.
+
+### Metodologia RAG
+
+A metodologia RAG combina duas etapas principais:
+
+1. **Retrieval (Recuperação):** Busca as informações mais relevantes do livro relacionadas à pergunta do usuário.
+2. **Augmented Generation (Geração Aumentada):** Utiliza um modelo de linguagem para gerar uma resposta coerente e informativa com base nas informações recuperadas.
+
+### Implementação
+
+1. **Preparação do Conhecimento:**
+   - **Digitalização:** Digitalizar o livro "COSMOS" para obter o texto completo.
+   - **Indexação:** Dividir o texto em partes menores (parágrafos, seções, etc.) e indexá-las para facilitar a busca.
+   - **Vetorização:** Converter cada parte do texto em um vetor numérico (embeddings) para representar seu significado semanticamente.
+
+2. **Retrieval (Recuperação):**
+   - **Receber Pergunta:** Obter a pergunta do usuário.
+   - **Vetorização da Pergunta:** Converter a pergunta em um vetor numérico.
+   - **Busca por Similaridade:** Encontrar as partes do texto indexado que possuem maior similaridade semântica com a pergunta (usando os vetores numéricos).
+
+3. **Augmented Generation (Geração Aumentada):**
+   - **Modelo de Linguagem:** Utilizar um modelo de linguagem (ex: GPT) para gerar uma resposta.
+   - **Contexto:** Fornecer ao modelo as partes do texto recuperadas como contexto para a geração da resposta.
+
+### Ferramentas e Tecnologias
+
+- **Biblioteca para Processamento de Linguagem Natural (NLP):** Para vetorização de texto e busca por similaridade (ex: spaCy, Hugging Face Transformers).
+- **Modelo de Linguagem:** Para geração de texto (ex: GPT-3.5, GPT-4).
+- **Framework para Desenvolvimento Web (Opcional):** Para criar uma interface amigável para o usuário (ex: Flask, Django).
+- **Banco de Dados (Opcional):** Para armazenar o texto indexado e os vetores numéricos.
+
+### Exemplo de Pergunta e Resposta
+
+**Pergunta:** Qual a importância da exploração espacial segundo Carl Sagan?
+
+**Resposta:** Segundo Carl Sagan, a exploração espacial é importante por diversas razões. Ela nos permite entender melhor nosso lugar no universo, expandir nosso conhecimento sobre a origem da vida, buscar recursos e descobrir novos mundos. Além disso, a exploração espacial nos inspira a superar desafios e nos une como espécie em busca de um futuro comum.
+
+### Próximos Passos
+
+- Obter o texto completo do livro "COSMOS".
+- Escolher as ferramentas e tecnologias adequadas.
+- Implementar as etapas de preparação do conhecimento, recuperação e geração aumentada.
+- Testar e refinar o sistema para garantir respostas precisas e relevantes.
+
+Este projeto é um ponto de partida para criar um sistema de perguntas e respostas sobre o livro "COSMOS". A implementação completa pode exigir mais tempo e recursos, mas o resultado final será uma ferramenta valiosa para estudantes, pesquisadores e entusiastas da obra de Carl Sagan.
