@@ -1,0 +1,31 @@
+## Metodologia de Avaliação do Sistema de Perguntas e Respostas sobre COSMOS
+
+A avaliação do sistema de perguntas e respostas sobre o livro "COSMOS" será rigorosa e abrangente, utilizando ferramentas e métricas específicas para garantir a qualidade e precisão das respostas geradas.
+
+### 3.1 Ferramentas de Avaliação
+
+- **Langwatch:** Plataforma de avaliação de modelos de linguagem que permite analisar a qualidade, coerência e relevância das respostas geradas.
+- **RAGAS (Retrieval-Augmented Generation Assessment):** Framework especializado em avaliar sistemas RAG, fornecendo métricas como precisão do contexto, revocação do contexto e correção da resposta.
+
+### 3.2 Métricas de Avaliação
+
+As respostas geradas pelo sistema serão comparadas com um gabarito de respostas corretas e avaliadas de acordo com as seguintes métricas:
+
+- **Ragas Answer Correctness:** Mede a correção da resposta em relação ao esperado pela avaliação, verificando se a informação está correta e relevante.
+- **Ragas Context Precision:** Avalia a precisão do contexto utilizado para gerar a resposta, indicando se as informações recuperadas do livro são realmente relevantes para a pergunta.
+- **Ragas Context Recall:** Mede a abrangência do contexto relevante utilizado, verificando se o sistema considerou todas as informações importantes do livro para responder à pergunta.
+
+### 3.3 Fluxo de Avaliação
+
+1. **Dataset de Teste:** Os participantes receberão um dataset com 10 perguntas e respostas para testar e ajustar seus sistemas.
+2. **Langwatch Evaluator:** Um componente de avaliação (Langwatch Evaluator) será fornecido e deverá ser integrado ao fluxo de cada participante.
+3. **Submissão:** A submissão final será feita através de um fluxo específico, onde os participantes fornecerão o JSON do seu fluxo e seus dados pessoais (email e CPF).
+4. **Validação Final:** A avaliação final será realizada em um dataset com perguntas diferentes do dataset de teste, para garantir que o sistema generalize bem para perguntas não vistas anteriormente.
+5. **Resultados:** Após a submissão, o fluxo fornecerá um link para visualização dos resultados da avaliação.
+
+### Observações
+
+- A utilização do Langwatch Evaluator é obrigatória para garantir a padronização e comparabilidade das avaliações.
+- O dataset de validação final com perguntas diferentes visa avaliar a capacidade do sistema de generalizar e responder a perguntas diversas sobre o livro "COSMOS".
+
+Com esta metodologia de avaliação rigorosa, o desafio garante que os sistemas de perguntas e respostas desenvolvidos sejam precisos, relevantes e capazes de fornecer informações confiáveis sobre o conteúdo do livro "COSMOS".
